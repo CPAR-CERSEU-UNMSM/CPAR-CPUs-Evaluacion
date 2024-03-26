@@ -45,7 +45,7 @@ Moverse al directorio `mass_sum`.
 Permancecer en el directorio `mass_sum`. Compilar el proyecto usando `cmake` y `make`.
 
 - **Pregunta 4.1.** Listar el/los comando(s) utilizado(s) y su salida correspondiente en la consola
-- **Pregunta 4.2.** Indicar que bucles (_"for loops"_) han sido vectorizados. Indicar el archivo y la linea correspondiente
+- **Pregunta 4.2.** Indicar que bucles (_"for loops"_) han sido vectorizados. Indicar el archivo y la línea correspondiente
 - **Pregunta 4.3.** Ejecutar el progrma e indicar el tiempo de ejecución usando `time ./mass_sum`
 
 ### Ejercicio 5
