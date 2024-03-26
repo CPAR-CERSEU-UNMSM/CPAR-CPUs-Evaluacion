@@ -4,6 +4,8 @@ Esta evaluación examina algunos conocimientos teóricos y habilidades en la par
 
 ## Puntaje
 
+**IMPORTANTE**: la nota aprobatoria mínima es **11**.
+
 | Ejercicio | Puntaje  |
 |:-------|:--------:|
 | 1       | 1 |
