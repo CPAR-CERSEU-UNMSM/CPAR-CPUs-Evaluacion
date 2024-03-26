@@ -12,7 +12,7 @@ Esta evaluación examina algunos conocimientos teóricos y habilidades en la par
 | 4       | 4 |
 | 5       | 4 |
 | 6       | 2 |
-| 7       | 1 |
+| 7       | 2 |
 | ======= |======  |
 | Total   | 20 |
 
