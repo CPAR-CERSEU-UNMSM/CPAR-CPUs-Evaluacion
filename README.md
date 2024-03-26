@@ -14,7 +14,7 @@ Esta evaluación examina algunos conocimientos teóricos y habilidades en la par
 | 6       | 2 |
 | 7       | 2 |
 | ======= |======  |
-| Total   | 20 |
+| Total   | 22 |
 
 ## Ejercicios
 
