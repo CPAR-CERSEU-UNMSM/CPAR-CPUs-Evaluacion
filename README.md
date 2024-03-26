@@ -49,64 +49,18 @@ Permancecer en el directorio `mass_sum`. Compilar el proyecto usando `cmake` y `
 - **Pregunta 4.3.** Ejecutar el programa e indicar el tiempo de ejecución usando `time ./mass_sum`
 
 ### Ejercicio 5
-Ejecutar el comando `make build_omp` en la terminal.
+Permancecer en el directorio `mass_sum`. Compilar el proyecto usando `cmake` y `make`.
 
-- **Pregunta 5.1.** Listar la/las salida correspondiente en la consola. 
-- **Pregunta 5.1.** Indicar (usando máximo dos oraciones) que es lo que realiza el comando anterior
-- **Pregunta 5.2.** Se ha ejecutado satisfactoriamente el comando anterior? Justifique su respuesta  (usando máximo dos oraciones)
-
-Modificar el archivo `Makefile` en el modo siguiente:
-
-```
-#CXX = icpx
-CXX = g++
-```
-
-```
-#OMP_CXXFLAGS = -fiopenmp -fopenmp-targets=spir64 -D__STRICT_ANSI__ -g -o
-OMP_CXXFLAGS = -fopenmp -D__STRICT_ANSI__ -g -o
-````
-
-Modificar el archivo `matrix_mul_omp.cpp` en el modo siguiente:
-
-```
- #pragma omp target teams distribute parallel for map(to : a, b) \
-   map(tofrom : c) thread_limit(128)
-//{
-     for (i = 0; i < M; i++) {
-       for (k = 0; k < N; k++) {
-         // Each element of the product is just the sum 1+2+...+n
-          ...
-         }
-       }
-     }
-//}
-```
-
-Ejecutar nuevamente el comando `make build_omp` en la terminal.
-
-- **Pregunta 5.1.** Listar la/las salida correspondiente en la consola. 
-- **Pregunta 5.2.** Se ha ejecutado satisfactoriamente el comando anterior? Justifique su respuesta  (usando máximo dos oraciones)
+- **Pregunta 5.1.** Explicar usando máximo tres oraciones como podría **deshabilitar** de manera _explícita_ la vectorización del programa
+- **Pregunta 5.2.** Una vez deshabilitada la vectorización, compile y ejecute nuevamente el programa. Indique si hay diferencia con respecto al tiempo de ejecución del ejercicio anterior
 
 ### Ejercicio 6
-Ejecutar el programa usando los siguientes comandos:
+Contestar las siguientes preguntas de teoría.
 
-```
-./matrix_mul_omp
-```
-
-- **Pregunta 6.1.** Listar la/las salida correspondiente en la consola
+- **Pregunta 6.1.** ¿Cuáles son las locaciones de git?
+- **Pregunta 6.3.** Mencione dos técnicas de vectorización
 
 ### Ejercicio 7
-Contestar las siguientes preguntas de teoría. Guardar las respuestas en un archivo texto o en un markdown. 
+Crear un repositorio en GitHub para guardar sus respuestas de este examen.
 
-- **Pregunta 7.1.** ¿Cuáles son las locaciones de git?
-- **Pregunta 7.2.** ¿Qué es el speedup y cómo se calcula?
-- **Pregunta 7.3.** Mencione dos técnicas de paralelización
-- **Pregunta 7.4.** ¿Cuáles son las dos leyes fundamentales de la computación paralela?
-
-### Ejercicio 8
-Crear un repositorio (en GitHub ó GitLab) para guardar el repositorio `oneAPI-samples` y sus cambios efectuados en este ejercicio (ejm. usando `git push`).
-
-- **Pregunta 8.1.** Listar todos los comandos `git` utilizados
-- **Pregunta 8.2.** Proporcionar el link del repositorio creado (en GitHub ó GitLab) en este [Ejercicio 8](#ejercicio-8)
+- **Pregunta 7.1.** Proporcionar el link del repositorio creado y enviarlo por email a los docentes
