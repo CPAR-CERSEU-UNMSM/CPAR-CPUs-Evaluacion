@@ -28,30 +28,24 @@ https://github.com/essentialsofparallelcomputing/EssentialsOfParallelComputing.g
 
 ### Ejercicio 2
 
-Moverse al directorio `Chapter 6`, y desde ese directorio clonar el submodulo `Chapter 6` usando el siguiente comando:
-
-`git submodule update --init Chapter6`
+Moverse al directorio `Chapter 6`. Estando en ese directorio, clonar el submodulo `Chapter 6` usando el comando `git submodule update --init Chapter6`
 
 - **Pregunta 2.1.** Listar el/los comando(s) utilizado(s) y su salida correspondiente en la consola
 
 ### Ejercicio 3
-Moverse al directorio del `matrix_mul`. La ruta es: `oneAPI-samples/DirectProgramming/C++SYCL/DenseLinearAlgebra/matrix_mul`.
+Moverse al directorio `mass_sum`. 
 
-- **Pregunta 3.1.** Listar el/los comando(s) utilizado(s) y su salida correspondiente en la consola
+- **Pregunta 3.1.** Listar los archivos presentes en tal directorio
+- **Pregunta 3.2.** Analizar el archivo `CMakeLists.txt` e indicar todas las opciones especificadas para el compilador GCC
+- **Pregunta 3.3.** De las opciones del compilador de la pregunta 3.2, indicar aquella(s) que _habilita(n)_/_facilita(n)_/_informa(n) sobre_ la vectorización
+- **Pregunta 3.4.** De las opciones del compilador de la pregunta 3.2, indicar aquella(s) que especifique(n) el ancho preferido del vector
+- **Pregunta 3.5.** Indicar el pragma utilizado en alguno(s) de sus archivos fuente. 
 
 ### Ejercicio 4
-Comentar las siguientes líneas en el archivo fuente `src/matrix_mul_omp.cpp` (dentro de la función `main()`): 
+Permancecer en el directorio `mass_sum`. Compilar el proyecto usando cmake.
 
-```
-//  MatrixMulOpenMpGpuOffloading();
-//  cout << "Result of matrix multiplication using GPU offloading: ";
-//  Result2 = VerifyResult(c);
-```
-
-Guardar los cambios en el archivo fuente. Luego ejecutar `git diff`.
-
-- **Pregunta 4.1.** Listar la salida correspondiente en consola del comando `git diff`
-- **Pregunta 4.2.** Interpretar y explicar el funcionamiento de `git diff`
+- **Pregunta 4.1.** Listar el/los comando(s) utilizado(s) y su salida correspondiente en la consola
+- **Pregunta 4.2.** Indicar que bucles (_"for loops"_) han sido vectorizados. Indicar el archivo y la linea correspondiente 
 
 ### Ejercicio 5
 Ejecutar el comando `make build_omp` en la terminal.
