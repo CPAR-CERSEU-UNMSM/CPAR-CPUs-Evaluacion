@@ -42,10 +42,11 @@ Moverse al directorio `mass_sum`.
 - **Pregunta 3.5.** Indicar el pragma utilizado en alguno(s) de sus archivos fuente. 
 
 ### Ejercicio 4
-Permancecer en el directorio `mass_sum`. Compilar el proyecto usando cmake.
+Permancecer en el directorio `mass_sum`. Compilar el proyecto usando `cmake` y `make`.
 
 - **Pregunta 4.1.** Listar el/los comando(s) utilizado(s) y su salida correspondiente en la consola
-- **Pregunta 4.2.** Indicar que bucles (_"for loops"_) han sido vectorizados. Indicar el archivo y la linea correspondiente 
+- **Pregunta 4.2.** Indicar que bucles (_"for loops"_) han sido vectorizados. Indicar el archivo y la linea correspondiente
+- **Pregunta 4.3.** Ejecutar el progrma e indicar el tiempo de ejecución usando `time ./mass_sum`
 
 ### Ejercicio 5
 Ejecutar el comando `make build_omp` en la terminal.
