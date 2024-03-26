@@ -8,12 +8,11 @@ Esta evaluación examina algunos conocimientos teóricos y habilidades en la par
 |:-------|:--------:|
 | 1       | 1 |
 | 2       | 1 |
-| 3       | 1 |
-| 4       | 3 |
+| 3       | 8 |
+| 4       | 4 |
 | 5       | 4 |
-| 6       | 3 |
-| 7       | 4 |
-| 8       | 3 |
+| 6       | 2 |
+| 7       | 1 |
 | ======= |======  |
 | Total   | 20 |
 
@@ -39,14 +38,15 @@ Moverse al directorio `mass_sum`.
 - **Pregunta 3.2.** Analizar el archivo `CMakeLists.txt` e indicar todas las opciones especificadas para el compilador GCC
 - **Pregunta 3.3.** De las opciones del compilador de la pregunta 3.2, indicar aquella(s) que _habilita(n)_/_facilita(n)_/_informa(n) sobre_ la vectorización
 - **Pregunta 3.4.** De las opciones del compilador de la pregunta 3.2, indicar aquella(s) que especifique(n) el ancho preferido del vector
-- **Pregunta 3.5.** Indicar el pragma utilizado en alguno(s) de sus archivos fuente. 
+
 
 ### Ejercicio 4
-Permancecer en el directorio `mass_sum`. Compilar el proyecto usando `cmake` y `make`.
+Permancecer en el directorio `mass_sum`. 
 
-- **Pregunta 4.1.** Listar el/los comando(s) utilizado(s) y su salida correspondiente en la consola
-- **Pregunta 4.2.** Indicar que bucles (_"for loops"_) han sido vectorizados. Indicar el archivo y la línea correspondiente
-- **Pregunta 4.3.** Ejecutar el programa e indicar el tiempo de ejecución usando `time ./mass_sum`
+- **Pregunta 4.1.** Indicar el pragma utilizado en alguno(s) de sus archivos fuente. 
+- **Pregunta 4.2.** Compilar el proyecto usando `cmake` y `make`.  Listar el/los comando(s) utilizado(s) y su salida correspondiente en la consola
+- **Pregunta 4.3.** Indicar que bucles (_"for loops"_) han sido vectorizados. Indicar el archivo y la línea correspondiente
+- **Pregunta 4.4.** Ejecutar el programa e indicar el tiempo de ejecución usando `time ./mass_sum`
 
 ### Ejercicio 5
 Permancecer en el directorio `mass_sum`. Compilar el proyecto usando `cmake` y `make`.
