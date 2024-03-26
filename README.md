@@ -30,7 +30,7 @@ https://github.com/essentialsofparallelcomputing/EssentialsOfParallelComputing.g
 
 Moverse al directorio `Chapter 6`, y desde ese directorio clonar el submodulo `Chapter 6` usando el siguiente comando:
 
-`git submodule update update --init Chapter6`
+`git submodule update --init Chapter6`
 
 - **Pregunta 2.1.** Listar el/los comando(s) utilizado(s) y su salida correspondiente en la consola
 
